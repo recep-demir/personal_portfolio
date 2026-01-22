@@ -7,6 +7,7 @@ const App = () => {
     <ThemeProvider>
       <div>
         <Navbar />
+        <HeroSection />
 
       </div>
     
