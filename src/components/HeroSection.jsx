@@ -1,3 +1,4 @@
+import React from "react";
 import { 
     motion, 
     useScroll, 
@@ -8,7 +9,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from "../context/ThemeContext";
 
 
-import PROFILE_PIC from '../assets/images/pr.jpeg';
+import PROFILE_PIC from "../assets/images/pr.jpeg";
 
 const HeroSection = () => {
   const { isDarkMode } = useTheme();
@@ -178,6 +179,10 @@ const HeroSection = () => {
                 </motion.div>
               </motion.div>
             </div>
+            {/* Desktop Layout - Split */}
+
+
+
           </div>
               {/* Scroll Indicator */}
               <motion.div
