@@ -85,17 +85,6 @@ const SkillsSection = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
   </section>; 
