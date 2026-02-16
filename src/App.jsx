@@ -6,7 +6,7 @@ import HeroSection from './components/Section/HeroSection'
 const App = () => {
   return (
     <ThemeProvider>
-      <div>
+      <div className='pb-96'>
         <Navbar />
         <HeroSection />
                 <SkillSection />
