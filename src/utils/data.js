@@ -1,8 +1,11 @@
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { Code2, Server, Database, Cloud } from "lucide-react";
 
-import Project_IMG_1 from "../assets/images/project-1.jpg";
-import Project_IMG_2 from "../assets/images/project-2.jpg";
-import Project_IMG_3 from "../assets/images/project-3.jpg";
+
+import PROJECT_IMG_1 from "../assets/images/project-1.jpg";
+import PROJECT_IMG_2 from "../assets/images/project-2.jpg";
+import PROJECT_IMG_3 from "../assets/images/project-3.jpg";
+import PROJECT_IMG_4 from "../assets/images/project-4.jpg";
 
 
 export const SKILLS_CATEGORY = [
@@ -81,46 +84,53 @@ export const STATS = [
 ];
 
 
+export const PROJECTS = [
+{
+  id: 1,
+  title: "E-Commerce Platform",
+  description: "A full-stack e-commerce solution with advanced filtering, payment integration, and inventory management.",
+  image: PROJECT_IMG_1,
+  tags: ["React", "Tailwind", "Framer Motion"], 
+  liveUrl: "#",
+  githubUrl: "#",
+  featured: false,
+  category: "Full Stack",
+},
+{
+  id: 2,
+  title: "Blog App with AI Post Generator",
+  description: "A full-stack blog app using the MERN stack - with full Markdown support",
+  image: PROJECT_IMG_2,
+  tags: ["React", "Node. js", "MongoDB", "Tailwind"],
+  liveUrl: "https://youtu.be/tUnGudIBBjQ",
+  githubUrl: "#",
+  featured: true,
+  category: "Full Stack",
+},
+{
+  id: 3,
+  title: "Task Management App",
+  description: "Collaborative project management tool with real-time updates, team chat",
+  image: PROJECT_IMG_3,
+  tags: ["Next. js", "TypeScript", "Node. js", "MongoDb"],
+  liveUrl: "https://youtu.be/fZK57PxKC-0",
+  githubUrl: "#",
+  featured: true,
+  category: "Web App",
+},
+{
+  id: 4,
+  title: "AI-Powered Interview Prep App",
+  description: "A smart AI-powered Interview Preparation App using the MERN stack",
+  image: PROJECT_IMG_4,
+  tags: ["Next. js", "TypeScript", "Node. js", "MongoDB"],
+  liveUrl: "https://youtu.be/yKB90yM-ao4",
+  githubUrl: "#",
+  featured: false,
+  category: "Web App",
+},
 
-
-// 1. Menü Linkleri
-export const links = [
-  { id: 1, href: "#home", text: "Ana Sayfa" },
-  { id: 2, href: "#about", text: "Hakkımda" },
-  { id: 3, href: "#skills", text: "Yetenekler" },
-  { id: 4, href: "#projects", text: "Projeler" },
 ];
 
-// 2. Yetenekler (Skills)
-export const skills = [
-  {
-    id: 1,
-    title: "HTML & CSS",
-    icon: <FaHtml5 className="h-16 w-16 text-orange-500" />,
-    text: "Modern ve responsive (mobil uyumlu) web sayfaları tasarımı.",
-  },
-  {
-    id: 2,
-    title: "Javascript",
-    icon: <FaJsSquare className="h-16 w-16 text-yellow-500" />,
-    text: "Dinamik ve etkileşimli kullanıcı deneyimleri geliştirme.",
-  },
-  {
-    id: 3,
-    title: "React",
-    icon: <FaReact className="h-16 w-16 text-blue-400" />,
-    text: "Bileşen tabanlı, hızlı ve ölçeklenebilir uygulamalar.",
-  },
-];
 
-// 3. Projeler (Burayı videonun devamında dolduracağız ama şimdilik örnek kalsın)
-export const projects = [
-  {
-    id: 1,
-    img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://google.com",
-    github: "https://github.com",
-    title: "Birinci Proje",
-    text: "Bu projede React ve Tailwind CSS kullanarak modern bir arayüz tasarladım.",
-  },
-];
+
