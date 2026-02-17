@@ -3,6 +3,8 @@ import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import HeroSection from './components/Section/HeroSection'
 import SkillsSection from './components/Section/SkillsSection'
+import ProjectsSection from './components/Section/ProjectsSection'
+
 
 const App = () => {
   return (
@@ -11,6 +13,7 @@ const App = () => {
         <Navbar />
         <HeroSection />
         <SkillsSection />
+        <ProjectsSection />
 
 
 
