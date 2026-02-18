@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/Section/HeroSection'
 import SkillsSection from './components/Section/SkillsSection'
 import ProjectsSection from './components/Section/ProjectsSection'
+import AboutSection from './components/Section/AboutSection'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <HeroSection />
         <SkillsSection />
         <ProjectsSection />
+        <AboutSection />
 
 
 
