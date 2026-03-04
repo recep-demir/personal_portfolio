@@ -1,11 +1,12 @@
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-import { Code2, Server, Database, Cloud } from "lucide-react";
+import { Code2, Server, Database, Cloud, Briefcase, GraduationCap, Heart, Coffee, BookOpen, Rocket, Award,Mail } from "lucide-react";
 
 
 import PROJECT_IMG_1 from "../assets/images/project-1.jpg";
 import PROJECT_IMG_2 from "../assets/images/project-2.jpg";
 import PROJECT_IMG_3 from "../assets/images/project-3.jpg";
 import PROJECT_IMG_4 from "../assets/images/project-4.jpg";
+import { color } from "framer-motion";
 
 
 export const SKILLS_CATEGORY = [
@@ -132,5 +133,94 @@ export const PROJECTS = [
 
 ];
 
+export const JOURNEY_STEPS = [
+  {
+    year: "2020",
+    title: "Started My Journey",
+    company: "Self-Taught Developer",
+    description: "Began my journey into web development, learning the basics of HTML, CSS, and JavaScript.",
+    icon:Code2,
+    color: "bg-blue-500",
+  },
+  {
+    year: "2021",
+    title: "First Internship",
+    company: "Tech Startup",
+    description: "Landed my first internship at a tech startup, where I gained hands-on experience with React and Node. js.",
+    icon:Briefcase,
+    color: "bg-green-500",
+  },
+  {
+    year: "2022",
+    title: "Computer Science Degree",
+    company: "University of Technology",
+    description: "Graduated with honors, specializing in web technologies and software engineering.",
+    icon: GraduationCap,
+    color: "bg-purple-500",
+  },
+  {
+    year: "2023",
+    title: "Full Stack Developer",
+    company: "Digital Solutions Ltd.",
+    description: "Promoted to full-time developer role. Built end-to-end applications using MERN stack.",
+    icon: Rocket,
+    color: "bg-orange-500",
+  },
+  {
+    year: "2024",
+    title: "Freelance & Open Source",
+    company: "Independent",
+    description: "Started freelancing and contributing to open source projects. Launched 3 successful projects.",
+    icon: Award,
+    color: "bg-pink-500",
+  },
+];
 
+export const PASSIONS = [
+  {
+    icon: Heart,
+    title: "User Experience",
+    description: "Crafting intuitive interfaces that users love",
+  },
+  {
+    icon: Coffee,
+    title: "Problem Solving",
+    description: "Turning complex challenges into elegant solutions",
+  },
+  {
+    icon: BookOpen,
+    title: "Continuous Learning",
+    description: "Always exploring new technologies and best practices",
+  },
+];
 
+export const SOCIAL_LINKS = [
+  {
+    name: "GitHub",
+    icon: FiGithub,
+    url: "https://github.com",
+    color: "hover:text-gray-400",
+    bgColor: "hover:bg-gray-800",
+  },
+  {
+    name: "LinkedIn",
+    icon: FiLinkedin,
+    url: "https://linkedin.com",
+    color: "hover:text-blue-400",
+    bgColor: "hover:bg-blue-500/10",
+  },
+  {
+    name: "Twitter",
+    icon: FiTwitter,
+    url: "https://twitter.com",
+    color: "hover:text-sky-400",
+    bgColor: "hover:bg-sky-500/10",
+  },
+  {
+    name: "Email",
+    icon: Mail,
+    url: "mailto:alex@example.com",
+    color: "hover:text-green-400",
+    bgColor: "hover:bg-green-500/10",
+  },
+];
