@@ -1,5 +1,5 @@
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-import { Code2, Server, Database, Cloud, Briefcase, GraduationCap, Heart, Coffee, BookOpen, Rocket, Award,Mail } from "lucide-react";
+import { Code2, Server, Database, Cloud, Briefcase, GraduationCap, Heart, Coffee, BookOpen, Rocket, Award,Mail,MapPin,Phone } from "lucide-react";
 
 
 import PROJECT_IMG_1 from "../assets/images/project-1.jpg";
@@ -222,5 +222,23 @@ export const SOCIAL_LINKS = [
     url: "mailto:alex@example.com",
     color: "hover:text-green-400",
     bgColor: "hover:bg-green-500/10",
+  },
+];
+
+export const CONTACT_INFO = [
+  {
+    icon: MapPin,
+    label: "Location",
+    value: "San Francisco, CA",
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "alex@timetoprogram.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+1 (555) 123-4567",
   },
 ];
