@@ -19,6 +19,8 @@ const App = () => {
         <ProjectsSection />
         <AboutSection />
         <ContactSection />
+        <Footer/>
+        
 
 
 
