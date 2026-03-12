@@ -5,7 +5,7 @@ import { useTheme } from "../../context/ThemeContext";
 import { CONTACT_INFO, SOCIAL_LINKS } from "../../utils/data";
 import { containerVariants, itemVariants } from "../../utils/helper";
 import TextInput from '../Input/TextInput';
-import { form } from "framer-motion/client";
+import SuccessModel from '../SuccessModel';
 
 const ContactSection = () => {
   const { isDarkMode } = useTheme();
@@ -57,7 +57,7 @@ const ContactSection = () => {
       <motion.div style={{ y }} className="absolute inset-0 overflow-hidden">
         <div
           className={`absolute top-20 left-1/4 w-72 h-72 rounded-full blur-3xl opacity-10 ${
-            isDarkMode ? "bg-blue-500" : "bg-blue-300"
+            isDarkMode ? "bg-blue-500" : "bg-blue-400"
           }`}
         />
         <div
@@ -118,7 +118,7 @@ const ContactSection = () => {
                   : "bg-gray-50/80 border-gray-200 backdrop-blur-sm"
               }`}
             >
-              <h3 className="text-2xl font-medium mb-6">Send me a message</h3>
+              <h3 className="text-2xl font-medium mb-8">Send Me a Message</h3>
 
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -150,7 +150,8 @@ const ContactSection = () => {
                   disabled={isSubmitting}
                   whileHover={{ y: -2, scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="'w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 text-white py-4 rounded-xl text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center justify-center space-x-2"
+                  className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 text-white py-4 rounded-xl text-sm uppercase tracking-wider font-medium transition-all duration-300 flex items-center justify-center space-x-2"
+                  onClick={handleSubmit}
                 >
                   {isSubmitting ? (
                     <>
@@ -177,9 +178,11 @@ const ContactSection = () => {
           </motion.div>
         </div>
 
+      <SuccessModel showSuccess={true} setShowSuccess={setShowSuccess} isDarkMode={isDarkMode} />
+
+
 
       </div>
-      <SuccessModel showSuccess={true} setShowSuccess={setShowSuccess} isDarkMode={isDarkMode} />
     </section>
 
 };
