@@ -274,7 +274,7 @@ const ContactSection = () => {
         </div>
 
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA 
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -310,6 +310,8 @@ const ContactSection = () => {
             </motion.button>
           </motion.div>
         </motion.div>
+
+        */}
 
 
 
