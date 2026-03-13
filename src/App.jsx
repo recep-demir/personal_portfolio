@@ -6,13 +6,13 @@ import SkillsSection from './components/Section/SkillsSection'
 import ProjectsSection from './components/Section/ProjectsSection'
 import AboutSection from './components/Section/AboutSection'
 import ContactSection from './components/Section/ContactSection'
-import { Contact } from 'lucide-react'
+import Footer from './components/Section/Footer'
 
 
 const App = () => {
   return (
     <ThemeProvider>
-      <div className='pb-[100vh]' >
+      <div>
         <Navbar />
         <HeroSection />
         <SkillsSection />
