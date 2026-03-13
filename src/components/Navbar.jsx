@@ -21,7 +21,8 @@ const Navbar = () => {
         isDarkMode ? "border-gray-800" : "border-gray-200" 
         }`}
         > 
-        <div className="max-w-7xl mx-auto flex items-center justify-between"> <motion.div 
+        <div className="max-w-7xl mx-auto flex items-center justify-between"> 
+            <motion.div 
         whileHover={{ scale: 1.05 }} 
         className="flex items-center space-x-2"
         >
