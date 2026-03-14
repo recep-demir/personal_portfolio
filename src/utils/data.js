@@ -1,196 +1,172 @@
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-import { Code2, Server, Database, Cloud, Briefcase, GraduationCap, Heart, Coffee, BookOpen, Rocket, Award,Mail,MapPin,Phone } from "lucide-react";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { 
+  Code2, Server, Briefcase, 
+  GraduationCap, Heart, Coffee, BookOpen, 
+  Rocket, ShieldCheck, Mail, MapPin, Phone, Cpu 
+} from "lucide-react";
 
-
-import PROJECT_IMG_1 from "../assets/images/project-1.jpg";
+// Proje resimlerini buraya import etmeyi unutma
+import PROJECT_IMG_1 from "../assets/images/project-1.jpg"; 
 import PROJECT_IMG_2 from "../assets/images/project-2.jpg";
 import PROJECT_IMG_3 from "../assets/images/project-3.jpg";
 import PROJECT_IMG_4 from "../assets/images/project-4.jpg";
-import { color } from "framer-motion";
-
 
 export const SKILLS_CATEGORY = [
   {
-    title: "Frontend",
+    title: "AI & Automation",
+    icon: Cpu, 
+    description: "Developing intelligent agents and automated workflows", 
+    skills: [
+      { name: "Python (Automation)", level: 75, color: "bg-yellow-500" }, 
+      { name: "LangChain / RAG", level: 75, color: "bg-orange-500" },
+      { name: "AI Agent Frameworks", level: 70, color: "bg-purple-500" }, 
+      { name: "Prompt Engineering", level: 80, color: "bg-blue-500" }, 
+    ],
+  },
+  {
+    title: "Frontend Development",
     icon: Code2, 
-    description: "Crafting beautiful, responsive user interfaces", 
+    description: "Building responsive and intuitive user interfaces", 
     skills: [
-      { name: "React", level: 95, color: "bg-blue-500" }, 
-      { name: "TypeScript", level: 90, color: "bg-blue-600" },
-      { name: "Next. js", level: 88, color: "bg-gray-800" }, 
-      { name: "Tailwind CSS", level: 92, color: "bg-cyan-500" }, 
-      { name: "Framer Motion", level: 85, color: "bg-pink-500" },
+      { name: "React.js", level: 75, color: "bg-blue-400" }, 
+      { name: "JavaScript / TypeScript", level: 75, color: "bg-blue-600" },
+      { name: "Tailwind CSS", level: 75, color: "bg-cyan-500" }, 
+      { name: "HTML5 / CSS3", level: 90, color: "bg-orange-600" }, 
     ],
-},
-{
-    title: "Backend",
+  },
+  {
+    title: "Backend & Systems",
     icon: Server, 
-    description: "Building robust server-side solutions", 
+    description: "Robust server-side logic and infrastructure", 
     skills: [
-      { name: "Node. js", level: 90, color: "bg-green-500" }, 
-      { name: "Express. js", level: 88, color: "bg-gray-700"},
-      { name: "Python", level: 85, color: "bg-yellow-500" }, 
-      { name: "GraphQL", level: 80, color: "bg-pink-600" }, 
-      { name: "REST APIs", level: 92, color: "bg-orange-500" }
+      { name: "Node.js / Express", level: 75, color: "bg-green-600" }, 
+      { name: "PostgreSQL / MongoDB", level: 70, color: "bg-emerald-500" },
+      { name: "Docker", level: 60, color: "bg-blue-700" }, 
+      { name: "Firebase / Auth", level: 85, color: "bg-orange-600" }
     ],
-},
-{
-    title: "Database",
-    icon: Database, 
-    description: "Managing and optimizing data storage", 
+  },
+  {
+    title: "Testing & Tools",
+    icon: ShieldCheck,
+    description: "Ensuring code quality and efficient delivery", 
     skills: [
-      { name: "MongoDB", level: 88, color: "bg-green-600" }, 
-      { name: "MongoDb", level: 85, color: "bg-blue-700" }, 
-      { name: "Redis", level: 80, color: "bg-red-500" }, 
-      { name: "Prisma", level: 82, color: "bg-indigo-600" },
-      { name: "Firebase", level: 78, color: "bg-yellow-600" }
-    ]
-},
-{
-    title: "DevOps",
-    icon: Cloud,
-    description: "Deploying and scaling applications", 
-    skills: [
-      { name: "Docker", level: 82, color: "bg-blue-600" }, 
-      { name: "AWS", level: 78, color: "bg-orange-600" }, 
-      { name: "Vercel", level: 90, color: "bg-gray-900" }, 
-      { name: "Git", level: 95, color: "bg-orange-700" }, 
-      { name: "CI/CD", level: 75, color: "bg-purple-600" },
+      { name: "Cypress.js", level: 75, color: "bg-slate-700" }, 
+      { name: "Git / GitHub", level: 90, color: "bg-orange-700" }, 
+      { name: "Postman / APIs", level: 85, color: "bg-orange-500" }, 
+      { name: "Vite / CLI", level: 80, color: "bg-indigo-500" }, 
     ],
-},
+  },
 ];
 
-
-
 export const TECH_STACK = [
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Sass",
-    "Webpack",
-    "Vite",
-    "Jest",
-    "Cypress",
-    "Figma",
-    "Adobe XD",
-    "Notion",
-    "Slack",
+  "Next.js",
+  "Bootstrap",
+  "SASS",
+  "Material UI",
+  "Styled Components",
+  "Redux.js",
+  "Axios",
+  "Mongoose",
+  "Sequelize",
+  "JSON Web Token (JWT)",
+  "SQL / NoSQL",
+  "SQLite3",
 ];
 
 export const STATS = [ 
-  { number: "50+", label: "Projects Completed" }, 
-  { number: "3+", label: "Years Experience" }, 
-  { number: "20+", label: "Technologies" }, 
-  { number: "100%", label: "Client Satisfaction" }, 
+  { number: "15+", label: "Projects Built" }, 
+  { number: "10+", label: "Technologies" }, 
+  { number: "6+", label: "Years Prof. Experience" },
+  { number: "3", label: "Languages Spoken" }, 
 ];
 
-
 export const PROJECTS = [
-{
-  id: 1,
-  title: "E-Commerce Platform",
-  description: "A full-stack e-commerce solution with advanced filtering, payment integration, and inventory management.",
-  image: PROJECT_IMG_1,
-  tags: ["React", "Tailwind", "Framer Motion"], 
-  liveUrl: "#",
-  githubUrl: "#",
-  featured: false,
-  category: "Full Stack",
-},
-{
-  id: 2,
-  title: "Blog App with AI Post Generator",
-  description: "A full-stack blog app using the MERN stack - with full Markdown support",
-  image: PROJECT_IMG_2,
-  tags: ["React", "Node. js", "MongoDB", "Tailwind"],
-  liveUrl: "https://youtu.be/tUnGudIBBjQ",
-  githubUrl: "#",
-  featured: true,
-  category: "Full Stack",
-},
-{
-  id: 3,
-  title: "Task Management App",
-  description: "Collaborative project management tool with real-time updates, team chat",
-  image: PROJECT_IMG_3,
-  tags: ["Next. js", "TypeScript", "Node. js", "MongoDb"],
-  liveUrl: "https://youtu.be/fZK57PxKC-0",
-  githubUrl: "#",
-  featured: true,
-  category: "Web App",
-},
-{
-  id: 4,
-  title: "AI-Powered Interview Prep App",
-  description: "A smart AI-powered Interview Preparation App using the MERN stack",
-  image: PROJECT_IMG_4,
-  tags: ["Next. js", "TypeScript", "Node. js", "MongoDB"],
-  liveUrl: "https://youtu.be/yKB90yM-ao4",
-  githubUrl: "#",
-  featured: false,
-  category: "Web App",
-},
-
+  {
+    id: 1,
+    title: "AI-Powered Self-Healing System",
+    description: "A specialized system that monitors logs, analyzes errors using LLMs, and suggests automated fixes (In Progress).",
+    image: PROJECT_IMG_1,
+    tags: ["Python", "LangChain", "Docker", "DevOps"], 
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: true,
+    category: "AI & Automation",
+  },
+  {
+    id: 2,
+    title: "Legal Tech Case Analyzer",
+    description: "Leveraging my Law background to build an AI tool that summarizes legal documents and identifies key risks.",
+    image: PROJECT_IMG_2,
+    tags: ["React", "Python", "RAG", "Tailwind"],
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: true,
+    category: "Full Stack",
+  },
+  {
+    
+    id: 3,
+    title: "E-Commerce Management Suite",
+    description: "A full-featured dashboard for inventory and sales tracking, inspired by my e-commerce business experience.",
+    image: PROJECT_IMG_3,
+    tags: ["Node.js", "MongoDB", "React", "Express"],
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+    category: "Web App",
+  },
 ];
 
 export const JOURNEY_STEPS = [
   {
-    year: "2020",
-    title: "Started My Journey",
-    company: "Self-Taught Developer",
-    description: "Began my journey into web development, learning the basics of HTML, CSS, and JavaScript.",
-    icon:Code2,
-    color: "bg-blue-500",
-  },
-  {
-    year: "2021",
-    title: "First Internship",
-    company: "Tech Startup",
-    description: "Landed my first internship at a tech startup, where I gained hands-on experience with React and Node. js.",
-    icon:Briefcase,
-    color: "bg-green-500",
+    year: "2006 - 2022",
+    title: "Leadership & Engineering",
+    company: "Naval Officer",
+    description: "Developed strong discipline, electrical engineering foundations, and team management skills in high-pressure environments.",
+    icon: Briefcase,
+    color: "bg-blue-900",
   },
   {
     year: "2022",
-    title: "Computer Science Degree",
-    company: "University of Technology",
-    description: "Graduated with honors, specializing in web technologies and software engineering.",
-    icon: GraduationCap,
-    color: "bg-purple-500",
-  },
-  {
-    year: "2023",
-    title: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    description: "Promoted to full-time developer role. Built end-to-end applications using MERN stack.",
+    title: "Entrepreneurship",
+    company: "E-commerce Founder",
+    description: "Started my IT journey by building and managing WordPress/WooCommerce solutions and digital marketing workflows.",
     icon: Rocket,
     color: "bg-orange-500",
   },
   {
+    year: "2023",
+    title: "Intensive Tech Transition",
+    company: "Powercoders Bootcamp",
+    description: "Focused on Full-Stack development and modern web technologies (MERN stack).",
+    icon: GraduationCap,
+    color: "bg-blue-500",
+  },
+  {
     year: "2024",
-    title: "Freelance & Open Source",
-    company: "Independent",
-    description: "Started freelancing and contributing to open source projects. Launched 3 successful projects.",
-    icon: Award,
-    color: "bg-pink-500",
+    title: "Specializing in AI & DevOps",
+    company: "Portfolio Development",
+    description: "Deepening expertise in AI Agents, RAG, and Cloud Automation to solve operational challenges.",
+    icon: Cpu,
+    color: "bg-purple-500",
   },
 ];
 
 export const PASSIONS = [
   {
-    icon: Heart,
-    title: "User Experience",
-    description: "Crafting intuitive interfaces that users love",
+    icon: Cpu,
+    title: "AI Automation",
+    description: "Passionate about making systems smarter and reducing manual toil.",
   },
   {
-    icon: Coffee,
-    title: "Problem Solving",
-    description: "Turning complex challenges into elegant solutions",
+    icon: Heart,
+    title: "Operational Excellence",
+    description: "Applying military-grade discipline to software quality and reliability.",
   },
   {
     icon: BookOpen,
-    title: "Continuous Learning",
-    description: "Always exploring new technologies and best practices",
+    title: "Continuous Growth",
+    description: "Bridging the gap between engineering, law, and cutting-edge AI.",
   },
 ];
 
@@ -198,28 +174,21 @@ export const SOCIAL_LINKS = [
   {
     name: "GitHub",
     icon: FiGithub,
-    url: "https://github.com",
+    url: "https://github.com/recep-demir",
     color: "hover:text-gray-400",
     bgColor: "hover:bg-gray-800",
   },
   {
     name: "LinkedIn",
     icon: FiLinkedin,
-    url: "https://linkedin.com",
+    url: "https://linkedin.com/in/recep-demir",
     color: "hover:text-blue-400",
     bgColor: "hover:bg-blue-500/10",
   },
   {
-    name: "Twitter",
-    icon: FiTwitter,
-    url: "https://twitter.com",
-    color: "hover:text-sky-400",
-    bgColor: "hover:bg-sky-500/10",
-  },
-  {
     name: "Email",
-    icon: Mail,
-    url: "mailto:alex@example.com",
+    icon: FiMail,
+    url: "mailto:recep.demir@powercoders.org",
     color: "hover:text-green-400",
     bgColor: "hover:bg-green-500/10",
   },
@@ -229,16 +198,16 @@ export const CONTACT_INFO = [
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Lucerne, Switzerland",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "alex@timetoprogram.com",
+    value: "recep.demir@powercoders.org",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
+    value: "+41 76 702 24 96",
   },
 ];
