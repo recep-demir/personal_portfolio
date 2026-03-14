@@ -93,28 +93,28 @@ const HeroSection = () => {
             variants={textVariants} 
             className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-500" : "text-gray-600"} mb-4`}
           >
-            Full Stack Developer
+            Full Stack Engineer (AI & Python)
           </motion.div>
           <motion.h1 
             variants={itemVariants} 
             className="text-3xl md:text-5xl font-light text-center mb-6 leading-tight"
           >
             <span className={` ${isDarkMode ? "text-white" : "text-gray-900"}`}>
-              Building digital
+              Engineering 
             </span>
             <span className="text-blue-500 font-medium ml-2">
-              experiences
+              Secure & Intelligent 
             </span>
             <br />
             <span className={isDarkMode ? "text-white" : "text-gray-900"}>
-              that matter
+              Experiences
             </span>
           </motion.h1>
           <motion.p 
             variants={itemVariants} 
             className={`text-base md:text-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"} mb-8 max-w-xl mx-auto font-light leading-relaxed`}
           >
-            I craft beautiful, functional web applications with modern technologies and thoughtful user experiences.
+            Full Stack Engineer specializing in AI automation, RAG systems, and scalable web solutions. I transform complex problems into intuitive digital experiences.
           </motion.p>
           {/* CTA Buttons - Mobile */}
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -142,9 +142,9 @@ const HeroSection = () => {
                 {/* Social Links - Mobile */}
                 <motion.div variants={itemVariants} className="flex justify-center space-x-6 mb-8">
                   {[
-                    { icon: FiGithub, href: "#" },
-                    { icon: FiLinkedin, href: "#" },
-                    { icon: Mail, href: "#" }
+                    { icon: FiGithub, href: "https://github.com/recep-demir" },
+                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/recep-demir" },
+                    { icon: Mail, href: "mailto:demir.rp@gmail.com" }
                   ].map((social, index) => (
                     <motion.a
                       key={index}
@@ -165,13 +165,15 @@ const HeroSection = () => {
                 <motion.div 
                     variants={itemVariants} 
                     className="flex justify-center items-center space-x-6 text-xs uppercase tracking-widest flex-wrap">
+                  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Python</span>
+                  <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>•</span>
+                  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Agentic AI</span>
+                  <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>•</span>
                   <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>React</span>
                   <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>•</span>
                   <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Node.js</span>
                   <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>•</span>
-                  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>TypeScript</span>
-                  <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>•</span>
-                  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>MongoDB</span>
+                  <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Docker</span>
                 </motion.div>
               </motion.div>
             </div>
@@ -188,28 +190,28 @@ const HeroSection = () => {
                 variants={textVariants}
                 className={`text-sm uppercase tracking-widest ${isDarkMode ? "text-gray-500" : "text-gray-600"} mb-6`}
               >
-                Full Stack Developer
+                Full Stack Engineer (AI & Python)
               </motion.div>
               <motion.h1
                 variants={itemVariants}
-                className="text-5xl xl: text-7xl font-light mb-8 leading-tight"
+                className="text-5xl md:text-6xl font-light mb-6 leading-tight"
               >
                 <span className={`${isDarkMode ? "text-white" : "text-gray-900"}`}>
-                  Building digital
+                  Engineering   <br/>
                 </span>
                 <span className="text-blue-500 font-medium">
-                  experiences
+                   Secure & Intelligent 
                 </span>
                 <br />
                 <span className={`${isDarkMode ? "text-white" : "text-gray-900"}`}>
-                  that matter
+                   Experiences
                 </span>
               </motion.h1>
               <motion.p
                 variants={itemVariants}
-                className={`text-xl ${isDarkMode ? "text-gray-400" : "text-gray-600"} mb-12 font-light leading-relaxed max-w-lg`}
+                className={`text-lg ${isDarkMode ? "text-gray-400" : "text-gray-600"} mb-12 font-light leading-relaxed max-w-lg`}
               >
-                I craft beautiful, functional web applications with modern technologies and thoughtful user experiences.
+                Full Stack Engineer specializing in AI automation, RAG systems, and scalable web solutions. I transform complex problems into intuitive digital experiences.
               </motion.p>
               {/* CTA Buttons - Desktop */}
               <motion.div variants={itemVariants} className="flex gap-6 mb-8">
@@ -236,9 +238,9 @@ const HeroSection = () => {
               {/* Social Links - Desktop */}
               <motion.div variants={itemVariants} className="flex space-x-6 mb-12">
                 {[
-                  { icon: FiGithub, href: "#" },
-                  { icon: FiLinkedin, href: "#" },
-                  { icon: Mail, href: "#" }
+                  { icon: FiGithub, href: "https://github.com/recep-demir" },
+                  { icon: FiLinkedin, href: "https://www.linkedin.com/in/recep-demir" },
+                  { icon: Mail, href: "mailto:demir.rp@gmail.com" }
                 ].map((social, index) => (
                   <motion.a
                     key={index}
@@ -268,18 +270,28 @@ const HeroSection = () => {
                 {/* Tech Stack -Desktop */}
                 <motion.div
                   variants={itemVariants}
-                  className="flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-20"
+                  className="flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-55 w-max whitespace-nowrap"
                 >
-                  <span className={isDarkMode ? "• text-gray-600" : "•text-gray-500"}> React </span> 
+                  <span className={isDarkMode ? "• text-gray-600" : "•text-gray-500"}> Python </span> 
                   <span
                     className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                     >
-                      ...
+                      .
                     </span>
                     <span
                       className={isDarkMode ? " text-gray-600" : "•text-gray-500"}
                       >
-                        Node.js
+                        Agentic AI
+                      </span> 
+                      <span
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                    >
+                      .
+                    </span>
+                    <span
+                      className={isDarkMode ? " text-gray-600" : "•text-gray-500"}
+                      >
+                        React
                       </span> 
                       <span
                         className={isDarkMode ? "text-gray-700" : "text-gray-400"}
@@ -289,7 +301,7 @@ const HeroSection = () => {
                         <span
                           className={isDarkMode ? "text-gray-600" : "•text-gray-500"}
                           >
-                            TypeScript
+                            Node.js
                           </span> 
                           <span
                             className={isDarkMode ? "text-gray-700" : "text-gray-400"}
@@ -299,7 +311,7 @@ const HeroSection = () => {
                             <span
                               className={isDarkMode ? "text-gray-600" : "•text-gray-500"}
                               >
-                                MongoDB
+                                Docker
                               </span>
                 </motion.div>
                 <motion.div 
