@@ -7,9 +7,9 @@ import {
 
 // Proje resimlerini buraya import etmeyi unutma
 import PROJECT_IMG_1 from "../assets/images/project-1.jpg"; 
-import PROJECT_IMG_2 from "../assets/images/project-2.jpg";
-import PROJECT_IMG_3 from "../assets/images/project-3.jpg";
-import PROJECT_IMG_4 from "../assets/images/project-4.jpg";
+import PROJECT_IMG_2 from "../assets/images/project-interview.png";
+import PROJECT_IMG_3 from "../assets/images/project-stock.png";
+import PROJECT_IMG_4 from "../assets/images/project-todo.png"
 
 export const SKILLS_CATEGORY = [
   {
@@ -94,18 +94,29 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: "Legal Tech Case Analyzer",
-    description: "Leveraging my Law background to build an AI tool that summarizes legal documents and identifies key risks.",
-    image: PROJECT_IMG_2,
-    tags: ["React", "Python", "RAG", "Tailwind"],
-    liveUrl: "#",
-    githubUrl: "#",
+    title: "AI-Powered Interview Prep",
+    description: "Smart interview preparation platform using Gemini AI to generate role-specific questions and detailed explanations.",
+    image: PROJECT_IMG_2, 
+    tags: ["MERN Stack", "Gemini AI", "Tailwind CSS", "JWT" ],
+    liveUrl: "https://interview-prep-app.netlify.app/",
+    githubUrl: "https://github.com/recep-demir/interview-prep-ai.git",
+    featured: true,
+    category: "AI & Full Stack",
+  },
+ {
+    id: 3,
+    title: "MERN Stock Management System",
+    description: "A full-stack inventory and transaction tracking system featuring real time dashboards with Tremor and MUI.",
+    image: PROJECT_IMG_3, 
+    tags: ["MERN Stack", "Redux Toolkit", "Tremor", "MUI", "JWT", "Swagger"],
+    liveUrl: "https://stockapp-mern.netlify.app/",
+    githubUrl: "https://github.com/recep-demir/StockAppMERN.git",
     featured: true,
     category: "Full Stack",
-  },
-  {
+},
+    {
     
-    id: 3,
+    id: 4,
     title: "E-Commerce Management Suite",
     description: "A full-featured dashboard for inventory and sales tracking, inspired by my e-commerce business experience.",
     image: PROJECT_IMG_3,
@@ -115,6 +126,30 @@ export const PROJECTS = [
     featured: false,
     category: "Web App",
   },
+    {
+    
+    id: 5,
+    title: "E-Commerce Management Suite",
+    description: "A full-featured dashboard for inventory and sales tracking, inspired by my e-commerce business experience.",
+    image: PROJECT_IMG_3,
+    tags: ["Node.js", "MongoDB", "React", "Express"],
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+    category: "Web App",
+  },
+  {
+  id: 6,
+  title: "TypeScript Full-Stack Task Manager",
+  description: "Full-stack Task Manager built with React and PostgreSQL, featuring Docker support.",
+  image: PROJECT_IMG_4, 
+  tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Docker"],
+  liveUrl: "https://typescript-fs-todo-app.netlify.app/",
+  githubUrl: "https://github.com/recep-demir/todo-app-ts.git",
+  featured: false,
+  category: "Full Stack",
+},
+  
 ];
 
 export const JOURNEY_STEPS = [
