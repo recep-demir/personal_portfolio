@@ -39,11 +39,43 @@ const ContactSection = () => {
     event.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
-    setShowSuccess(true);
-    setFormData({ name: "", email: "", message: "" });
-    setTimeout(() => setShowSuccess(false), 3000);
+    try {
+      // Sending the form data to Web3Forms API
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY, 
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          from_name: "Recep Demir Portfolio Contact Form", // Optional: Customizes the sender name in your inbox
+          subject: `New Message from ${formData.name}`, // Optional: Customizes the email subject
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // If email is sent successfully
+        setShowSuccess(true);
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setShowSuccess(false), 3000);
+      } else {
+        // If there is an issue with the API
+        console.error("Form submission failed:", result);
+        alert("Failed to send the message. Please check your access key or try again later.");
+      }
+    } catch (error) {
+      // If there is a network error
+      console.error("Error submitting the form:", error);
+      alert("An error occurred. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return  <section
