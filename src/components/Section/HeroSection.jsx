@@ -66,10 +66,10 @@ const HeroSection = () => {
             variants={imageVariants} 
             className="mb-8"
           >
-            <div className="w-48 h-48 mx-auto relative">
+            <div className="w-32 h-32 mx-auto relative">
               <motion.div 
                 whileHover={{ scale: 1.05 }} 
-                className={`w-full h-48 rounded-2xl overflow-hidden border-4 ${isDarkMode ? "border-gray-800" : "border-gray-300"} shadow-2xl`}
+                className={`w-full h-32 rounded-2xl overflow-hidden border-4 ${isDarkMode ? "border-gray-800" : "border-gray-300"} shadow-2xl`}
                 
               >
                 <img 
