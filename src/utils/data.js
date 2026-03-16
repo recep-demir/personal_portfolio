@@ -25,17 +25,7 @@ export const SKILLS_CATEGORY = [
       { name: "Prompt Engineering", level: 80, color: "bg-blue-500" }, 
     ],
   },
-  {
-    title: "Frontend Development",
-    icon: Code2, 
-    description: "Building responsive and intuitive user interfaces", 
-    skills: [
-      { name: "React.js", level: 75, color: "bg-blue-400" }, 
-      { name: "JavaScript / TypeScript", level: 75, color: "bg-blue-600" },
-      { name: "Tailwind CSS", level: 75, color: "bg-cyan-500" }, 
-      { name: "HTML5 / CSS3", level: 90, color: "bg-orange-600" }, 
-    ],
-  },
+  
   {
     title: "Backend & Systems",
     icon: Server, 
@@ -45,6 +35,17 @@ export const SKILLS_CATEGORY = [
       { name: "PostgreSQL / MongoDB", level: 70, color: "bg-emerald-500" },
       { name: "Docker", level: 60, color: "bg-blue-700" }, 
       { name: "Firebase / Auth", level: 85, color: "bg-orange-600" }
+    ],
+  },
+  {
+    title: "Frontend Development",
+    icon: Code2, 
+    description: "Building responsive and intuitive user interfaces", 
+    skills: [
+      { name: "React.js", level: 75, color: "bg-blue-400" }, 
+      { name: "JavaScript / TypeScript", level: 75, color: "bg-blue-600" },
+      { name: "Tailwind CSS", level: 75, color: "bg-cyan-500" }, 
+      { name: "HTML5 / CSS3", level: 90, color: "bg-orange-600" }, 
     ],
   },
   {
