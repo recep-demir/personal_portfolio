@@ -18,25 +18,20 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: FiGithub,
-      url: "https://github.com",
+      url: "https://github.com/recep-demir",
       color: "hover:text-gray-400"
     },
     {
       name: "LinkedIn",
       icon: FiLinkedin,
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/recep-demir",
       color: "hover:text-blue-400"
     },
-    {
-      name: "Twitter",
-      icon: FiTwitter,
-      url: "https://twitter.com",
-      color: "hover:text-sky-400"
-    },
+    
     {
       name: 'Email',
       icon: Mail,
-      url: "mailto:alex@example.com",
+      url: "mailto:demir.rp@gmail.com",
       color: "hover:text-green-400"
     }
   ];
@@ -102,7 +97,7 @@ const Footer = () => {
         <div className={`absolute top-10 right-1/3 w-48 h-48 rounded-full blur-3xl opacity-3 ${isDarkMode ? 'bg-purple-500' : 'bg-purple-400'}`} />
       </motion.div>
 
-      <div className="relative z-10 px-6 py-16">
+      <div className="relative z-10 px-6 py-6">
         <div className="max-w-6xl mx-auto">
 
           {/* Main Footer Content */}
@@ -115,7 +110,7 @@ const Footer = () => {
           
           
           {/* Logo/Brand */}
-          <motion.div variants={itemVariants} className="space-y-4">
+          {/* <motion.div variants={itemVariants} className="space-y-4">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400 }}
@@ -128,7 +123,7 @@ const Footer = () => {
               >
                 <Code2 size={28} />
               </motion.div>
-              <span>Alex Johnson</span>
+              <span>Recep Demir</span>
             </motion.div>
             <motion.p
               variants={itemVariants}
@@ -136,7 +131,7 @@ const Footer = () => {
             >
               Crafting digital experiences with passion and precision, and a touch of magic.
             </motion.p>
-          </motion.div>
+          </motion.div> */}
 
           {/* Social Links */}
           <motion.div variants={itemVariants} className="flex justify-center space-x-6">
@@ -172,7 +167,7 @@ const Footer = () => {
 
 
         {/* Divider */}
-        <motion.div
+        {/* <motion.div
           variants={itemVariants}
           className="flex items-center justify-center space-x-4"
         >
@@ -185,7 +180,7 @@ const Footer = () => {
             <Heart size={16} fill="currentColor" />
           </motion.div>
           <div className={`h-px w-16 ${isDarkMode ? 'bg-gray-700' : 'bg-gray-300'}`}></div>
-        </motion.div>
+        </motion.div> */}
 
 
         {/* Copyright */}
@@ -194,7 +189,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Time To Program. All rights reserved.
           </p>
           <p className={`text-xs ${isDarkMode ? 'text-gray-600' : 'text-gray-500'}`}>
-            Built with React & Framer Motion · Designed with care
+            Built with React & Framer Motion
           </p>
         </motion.div>
 
@@ -202,7 +197,7 @@ const Footer = () => {
         <motion.div variants={itemVariants}>
           <motion.button
             onClick={scrollToTop}
-            className={`inline-flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+            className={`inline-flex items-center space-x-2 px-2 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
               isDarkMode
                 ? 'bg-gray-800/50 hover:bg-gray-700/50 text-gray-400 hover:text-white'
                 : 'bg-gray-100/50 hover:bg-gray-200/50 text-gray-600 hover:text-gray-900'
