@@ -2,7 +2,7 @@ import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { 
   Code2, Server, Briefcase, 
   GraduationCap, Heart, Coffee, BookOpen, 
-  Rocket, ShieldCheck, Mail, MapPin, Phone, Cpu 
+  Rocket, ShieldCheck, Mail, MapPin, Phone, Cpu
 } from "lucide-react";
 
 // Proje resimlerini buraya import etmeyi unutma
@@ -156,54 +156,54 @@ export const PROJECTS = [
 
 export const JOURNEY_STEPS = [
   {
-    year: "2006 - 2022",
-    title: "Leadership & Engineering",
-    company: "Naval Officer",
-    description: "Developed strong discipline, electrical engineering foundations, and team management skills in high-pressure environments.",
-    icon: Briefcase,
-    color: "bg-blue-900",
+    year: "2025 - Present",
+    title: "AI Automation Specialist",
+    company: "Project Development",
+    description: "Currently engineering AI Agents, RAG systems, and Self-Healing architectures. Merging naval engineering precision with cutting-edge automation to solve complex technical challenges.",
+    icon: Cpu,
+    color: "bg-purple-600",
   },
   {
-    year: "2022",
-    title: "Entrepreneurship",
-    company: "E-commerce Founder",
-    description: "Started my IT journey by building and managing WordPress/WooCommerce solutions and digital marketing workflows.",
-    icon: Rocket,
-    color: "bg-orange-500",
-  },
-  {
-    year: "2023",
+    year: "2023 - 2025",
     title: "Intensive Tech Transition",
-    company: "Powercoders Bootcamp",
-    description: "Focused on Full-Stack development and modern web technologies (MERN stack).",
+    company: "Clarusway & Powercoders",
+    description: "Successfully completed 1000+ hours of full-stack training. Mastered the MERN & PERN stack, focused on building scalable web applications and collaborating in agile teams.",
     icon: GraduationCap,
     color: "bg-blue-500",
   },
   {
-    year: "2024",
-    title: "Specializing in AI & DevOps",
-    company: "Portfolio Development",
-    description: "Deepening expertise in AI Agents, RAG, and Cloud Automation to solve operational challenges.",
-    icon: Cpu,
-    color: "bg-purple-500",
+    year: "2019 - 2022",
+    title: "IT Entrepreneurship",
+    company: "E-commerce Founder",
+    description: "Transitioned into the tech sector by architecting WordPress/WooCommerce platforms and automating digital marketing and inventory workflows for my own business.",
+    icon: Rocket,
+    color: "bg-orange-600",
+  },
+  {
+    year: "2013 - 2018",
+    title: "Engineering & Information Security Officer",
+    company: "Naval Officer",
+    description: "Served as Information Security Officer and Electrical Engineer. Managed secure communication systems and mission-critical technical operations under high-pressure environments.",
+    icon: ShieldCheck, 
+    color: "bg-blue-900",
   },
 ];
 
 export const PASSIONS = [
   {
     icon: Cpu,
-    title: "AI Automation",
-    description: "Passionate about making systems smarter and reducing manual toil.",
+    title: "AI & Automation",
+    description: "I love making systems smarter. My goal is to reduce manual work by using AI Agents and Python scripts.",
   },
   {
     icon: Heart,
-    title: "Operational Excellence",
-    description: "Applying military-grade discipline to software quality and reliability.",
+    title: "System Reliability",
+    description: "I apply my military discipline to software. I focus on 'Self-Healing' code that stays stable and secure.",
   },
   {
     icon: BookOpen,
-    title: "Continuous Growth",
-    description: "Bridging the gap between engineering, law, and cutting-edge AI.",
+    title: "Continuous Learning",
+    description: "I enjoy solving complex problems by connecting my engineering logic, legal knowledge, and IT skills.",
   },
 ];
 
@@ -240,7 +240,7 @@ export const CONTACT_INFO = [
   {
     icon: Mail,
     label: "Email",
-    value: "recep.demir@powercoders.org",
+    value: "demir.rp@gmail.com",
   },
   {
     icon: Phone,
