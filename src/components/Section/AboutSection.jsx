@@ -114,17 +114,17 @@ const AboutSection = () => {
                 }`}
               >
                 <h3 className="text-2xl font-medium mb-6">My Mission</h3> 
-                <p className={`text-lg leading-relaxed mb-6 ${
-                  isDarkMode ? "text-gray-300" : "text-gray-700"}`}
-                >
-                  I believe technology should be a bridge that connects people and solves real-world problems. My passion lies in crafting digital experiences that are not just functional, but delightful and accessible to everyone.
-                </p>
-                <p className={`text-base leading-relaxed ${
-                  isDarkMode ? "text-gray-400" : "text-gray-600"
-                  }`}
+                  <p className={`text-lg leading-relaxed mb-6 ${
+                    isDarkMode ? "text-gray-300" : "text-gray-700"}`}
                   >
-                  When I'm not coding, you'll find me exploring new frameworks, contributing to open source, or mentoring aspiring developers. I love the constant evolution of web technologies and the endless possibilities they bring to create meaningful digital experiences.
-                </p>
+                    I believe technology should work for us, not the other way around. My mission is to build intelligent AI systems and "self-healing" architectures that solve complex problems with engineering precision and naval discipline.
+                  </p>
+                  <p className={`text-base leading-relaxed ${
+                    isDarkMode ? "text-gray-400" : "text-gray-600"
+                    }`}
+                    >
+                    When I'm not coding, you'll find me rowing on Lake Lucerne or hiking in the Swiss mountains. I am a lifelong learner with a background in engineering, always looking for new ways to bridge the gap between human needs and smart automation.
+                  </p>
               </motion.div>
 
               {/* What I Love Building */}
@@ -158,23 +158,26 @@ const AboutSection = () => {
                 </div>
               </motion.div>
 
+              
+
               {/* Digital Signature */}
-              <motion.div variants={itemVariants} className="text-center py-8">
+              {/* <motion.div variants={itemVariants} className="text-center py-8">
                 <div className={`text-sm ${
                   isDarkMode ? "text-gray-500" : "text-gray-600"
                   } mb-4`}>
                   Crafted with passion by
                 </div>
                 
-                {/* DigitalSignature */}
+                
                 <div className="flex justify-center">
-                    <img src={SIGNATURE} alt="Alex" className="w-28" />
+                    <img src={SIGNATURE} alt="Recep" className="w-28" />
                   </div>
                 
                 <div className="text-lg font-medium text-blue-500 mt-2">
-                  Alex Johnson
+                  Recep Demir
                 </div>
-              </motion.div>
+              </motion.div> */}
+           
             </motion.div>
 
             {/* Developer Journey Timeline */}
@@ -245,7 +248,7 @@ const AboutSection = () => {
         </div>
 
 
-        {/* Call to Action */}
+        {/* Call to Action
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -264,7 +267,7 @@ const AboutSection = () => {
               Let's Work Together
             </motion.button>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
 
  
 
