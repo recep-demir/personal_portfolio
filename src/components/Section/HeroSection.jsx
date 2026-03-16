@@ -4,7 +4,7 @@ import {
     useScroll, 
     useTransform 
 } from "framer-motion";
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, Mail, Download } from "lucide-react"; // Download eklendi
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext";
 
@@ -139,26 +139,41 @@ const HeroSection = () => {
             </motion.button>
           </motion.div>
 
-                {/* Social Links - Mobile */}
-                <motion.div variants={itemVariants} className="flex justify-center space-x-6 mb-8">
-                  {[
-                    { icon: FiGithub, href: "https://github.com/recep-demir" },
-                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/recep-demir" },
-                    { icon: Mail, href: "mailto:demir.rp@gmail.com" }
-                  ].map((social, index) => (
-                    <motion.a
-                      key={index}
-                      href={social.href}
-                      whileHover={{ y: -3, scale: 1.1 }}
-                      className={`p-3 rounded-full transition-colors ${
-                        isDarkMode
-                          ? "text-gray-400 hover:text-white hover:bg-gray-800"
-                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
-                      }`}
-                    >
-                      <social.icon size={20} />
-                    </motion.a>
-                  ))}
+                {/* Social Links & Resume Link - Mobile */}
+                <motion.div variants={itemVariants} className="flex flex-col items-center mb-8">
+                  <div className="flex justify-center space-x-6">
+                    {[
+                      { icon: FiGithub, href: "https://github.com/recep-demir" },
+                      { icon: FiLinkedin, href: "https://www.linkedin.com/in/recep-demir" },
+                      { icon: Mail, href: "mailto:demir.rp@gmail.com" }
+                    ].map((social, index) => (
+                      <motion.a
+                        key={index}
+                        href={social.href}
+                        whileHover={{ y: -3, scale: 1.1 }}
+                        className={`p-3 rounded-full transition-colors ${
+                          isDarkMode
+                            ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                            : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                        }`}
+                      >
+                        <social.icon size={20} />
+                      </motion.a>
+                    ))}
+                  </div>
+                  
+                  {/* Yeni CV İndirme Linki (Mobil) */}
+                  <motion.a
+                    href="/CV_RecepDEMIR.pdf"
+                    download="Recep_Demir_CV.pdf"
+                    whileHover={{ x: 3 }}
+                    className={`flex items-center gap-2 mt-4 text-sm font-medium transition-colors ${
+                      isDarkMode ? "text-gray-500 hover:text-blue-400" : "text-gray-600 hover:text-blue-600"
+                    }`}
+                  >
+                    <Download size={16} />
+                    <span>Download my Resume (PDF)</span>
+                  </motion.a>
                 </motion.div>
       
                 {/* Tech Stack - Mobile */}
@@ -235,26 +250,42 @@ const HeroSection = () => {
                   Get in Touch
                 </motion.button>
               </motion.div>
-              {/* Social Links - Desktop */}
-              <motion.div variants={itemVariants} className="flex space-x-6 mb-12">
-                {[
-                  { icon: FiGithub, href: "https://github.com/recep-demir" },
-                  { icon: FiLinkedin, href: "https://www.linkedin.com/in/recep-demir" },
-                  { icon: Mail, href: "mailto:demir.rp@gmail.com" }
-                ].map((social, index) => (
-                  <motion.a
-                    key={index}
-                    href={social.href}
-                    whileHover={{ y: -3, scale: 1.1 }}
-                    className={`p-3 rounded-full transition-colors ${
-                      isDarkMode
-                        ? "text-gray-400 hover:text-white hover:bg-gray-800"
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
-                    }`}
-                  >
-                    <social.icon size={20} />
-                  </motion.a>
-                ))}
+              
+              {/* Social Links & Resume Link - Desktop */}
+              <motion.div variants={itemVariants} className="flex flex-col mb-12 ">
+                <div className="flex space-x-6">
+                  {[
+                    { icon: FiGithub, href: "https://github.com/recep-demir" },
+                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/recep-demir" },
+                    { icon: Mail, href: "mailto:demir.rp@gmail.com" }
+                  ].map((social, index) => (
+                    <motion.a
+                      key={index}
+                      href={social.href}
+                      whileHover={{ y: -3, scale: 1.1 }}
+                      className={`p-3 rounded-full transition-colors ${
+                        isDarkMode
+                          ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                      }`}
+                    >
+                      <social.icon size={20} />
+                    </motion.a>
+                  ))}
+                </div>
+                
+                {/* Yeni CV İndirme Linki (Masaüstü) */}
+                <motion.a
+                  href="/CV_RecepDEMIR.pdf"
+                  download="Recep_Demir_CV.pdf"
+                  whileHover={{ x: 3 }}
+                  className={`flex items-center gap-2 mt-6 text-sm font-medium transition-colors w-max ${
+                    isDarkMode ? "text-gray-500 hover:text-blue-400" : "text-gray-600 hover:text-blue-600"
+                  }`}
+                >
+                  <Download size={16} />
+                  <span>Download my Resume (PDF)</span>
+                </motion.a>
               </motion.div>
 
             </motion.div>
