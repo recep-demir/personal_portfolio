@@ -90,7 +90,7 @@ export const PROJECTS = [
     image: PROJECT_IMG_1,
     tags: ["Python", "LangChain","RAG", "Docker", "DevOps"], 
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/recep-demir/ai_automation.git",
     featured: true,
     category: "AI & Automation",
   },
