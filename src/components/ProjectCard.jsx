@@ -28,7 +28,7 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
         isDarkMode 
         ? "bg-gray-900/50 border-gray-800 hover:border-gray-700 hover:shadow-2xl hover:shadow-blue-500/10"
         : "bg-white/80 border-gray-200 hover:border-gray-300 hover:shadow-2xl hover:shadow-blue-500/10"
-      }backdrop-blur-sm`}>
+      } backdrop-blur-sm`}>
 
 
         {/* Project Image */}
@@ -58,15 +58,17 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
             </span>
           </div>
 
-          {/* Hover Overlay with CTA Buttons */}
+          {/* Hover Overlay with CTA Buttons - ONLY DESKTOP (hidden md:flex) */}
           <motion.div
             initial={{ opacity: 0 }}
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center space-x-4 "
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm hidden md:flex items-center justify-center space-x-4 "
           >
             <motion.a
               href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ y: 20, opacity: 0.5 }}
               whileHover={{ y: 0, opacity: 1, scale: 1.05 }}
               transition={{ duration: 0.3, delay: 0.1 }}
@@ -78,6 +80,8 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
 
             <motion.a
               href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ y: 20, opacity: 0.5 }}
               whileHover={{ y: 0, opacity: 1, scale: 1.05 }}
               transition={{ duration: 0.3, delay: 0.2 }}
@@ -86,7 +90,6 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
               <FiGithub size={16} />
               <span>GitHub</span>
             </motion.a>
-
           </motion.div>
 
         </div>
@@ -105,7 +108,7 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
           </p>
 
           {/* Tech Stack Tags */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag, tagIndex) => (
               <span
                 key={tagIndex}
@@ -119,16 +122,36 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
               </span>
             ))}
           </div>
+
+          {/* Mobile Action Buttons - ONLY MOBILE (flex md:hidden) */}
+          <div className="mt-6 flex md:hidden items-center gap-3">
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 bg-blue-500 active:bg-blue-600 text-white py-2.5 rounded-xl flex items-center justify-center gap-2 text-sm font-medium transition-colors"
+            >
+              <ExternalLink size={16} />
+              <span>Live Demo</span>
+            </a>
+            
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex-1 border-2 ${
+                isDarkMode 
+                  ? "border-gray-700 text-gray-300 active:bg-gray-800" 
+                  : "border-gray-300 text-gray-700 active:bg-gray-100"
+              } py-2 rounded-xl flex items-center justify-center gap-2 text-sm font-medium transition-colors`}
+            >
+              <FiGithub size={16} />
+              <span>GitHub</span>
+            </a>
+          </div>
+
         </div>
-              
-        
-
-
-
-
-
       </div>
-
     </motion.div>
   );
 };
