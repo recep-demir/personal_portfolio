@@ -1,16 +1,29 @@
-# React + Vite
+# Personal Portfolio - Recep Demir
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This project showcases my journey from a Naval Officer to an AI Automation and Full Stack Engineer, highlighting my technical skills, professional projects, and core values.
 
-Currently, two official plugins are available:
+## About Me
+I am an **AI Automation Engineer** and **Full Stack Developer** based in Lucerne, Switzerland. With a background as a Naval Officer, I bring a unique blend of leadership, discipline, and technical expertise (Electrical & Electronics Engineering) to the world of software development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+My current focus is on building intelligent automation systems using **Python, LangChain, and RAG (Retrieval-Augmented Generation)** to optimize business operations and technical workflows.
 
-## React Compiler
+## 🛠 Tech Stack
+- **Frontend:** React.js, Next.js, TypeScript, Tailwind CSS, Bootstrap.
+- **Backend:** Node.js, Express.js, Python (Specialized in Automation).
+- **AI & Data:** Agentic AI, LangChain, RAG, PostgreSQL, MongoDB, SQL.
+- **DevOps & Tools:** Docker, Git/GitHub, Postman, RESTful APIs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📈 2024-2025 Road Map
+I am currently following a rigorous IT plan to specialize in:
+- **Advanced Python & Security:** Developing corporate-standard Log Parsers and security tools.
+- **Autonomous AI Actions:** Implementing AI Function Calling and structured data outputs.
+- **Cloud & DevOps:** Building self-healing cloud ecosystems with Prometheus, Grafana, and Ansible.
 
-## Expanding the ESLint configuration
+## 🌐 Contact & Links
+- **LinkedIn:** [www.linkedin.com/in/recep-demir]
+- **GitHub:** [https://github.com/recep-demir]
+- **Location:** Luzern, Switzerland
+- **Languages:** Turkish (Native), English (C1), German (B2)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Built with React + Vite*
