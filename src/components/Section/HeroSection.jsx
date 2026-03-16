@@ -177,7 +177,7 @@ const HeroSection = () => {
                 </motion.div>
       
                 {/* Tech Stack - Mobile */}
-                <motion.div 
+                {/* <motion.div 
                     variants={itemVariants} 
                     className="flex justify-center items-center space-x-6 text-xs uppercase tracking-widest flex-wrap">
                   <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Python</span>
@@ -189,11 +189,11 @@ const HeroSection = () => {
                   <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Node.js</span>
                   <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>•</span>
                   <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Docker</span>
-                </motion.div>
+                </motion.div> */}
               </motion.div>
             </div>
           {/* Desktop Layout - Split */}
-          <div className="hidden lg:grid grid-cols-2 lg:gap-16 lg:items-center justify-center">
+          <div className="hidden lg:grid grid-cols-2 lg:gap-16 lg:items-center justify-center mx-10">
             {/* Left Column - Content */}
             <motion.div
               initial="hidden"
@@ -347,7 +347,7 @@ const HeroSection = () => {
                 </motion.div>
                 <motion.div 
                   whileHover={{ scale: 1.02 }} 
-                  className={`w-80 h-96 mr-10 mb-34 rounded-3xl overflow-hidden border-4 ${isDarkMode ? "border-gray-800" : "border-gray-300"} shadow-2xl`}
+                  className={`w-80 h-96 mb-34 rounded-3xl overflow-hidden border-4 ${isDarkMode ? "border-gray-800" : "border-gray-300"} shadow-2xl`}
                 >
                   <img 
                     src={PROFILE_PIC} 
@@ -379,7 +379,7 @@ const HeroSection = () => {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+                className="absolute bottom-2 left-1/2 transform -translate-x-1/2"
               >
                 <ArrowDown size={20} className={isDarkMode ? "text-gray-600" : "text-gray-400"} />
               </motion.div>
