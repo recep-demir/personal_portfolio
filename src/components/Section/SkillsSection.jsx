@@ -39,7 +39,7 @@ const SkillsSection = () => {
   return <section 
     ref={sectionRef} 
     id="skills" 
-    className={`py-18 px-6 ${
+    className={`py-24 px-6 ${
       isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"} relative overflow-hidden`}
     
   >
