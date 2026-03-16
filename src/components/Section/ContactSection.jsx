@@ -49,7 +49,7 @@ const ContactSection = () => {
   return  <section
       id="contact"
       ref={sectionRef}
-      className={`py-24 px-6 ${
+      className={`py-10 px-6 ${
         isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
       } relative overflow-hidden`}
     >
@@ -251,7 +251,7 @@ const ContactSection = () => {
             {/* Availability Status */}
             <motion.div
               variants={itemVariants}
-              className={`p-6 rounded-xl border ${
+              className={`p-5 rounded-xl border ${
                 isDarkMode
                   ? "bg-green-500/10 border-green-500/20"
                   : "bg-green-50 border-green-200"
@@ -266,7 +266,7 @@ const ContactSection = () => {
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 }`}
               >
-                I'm currently available for freelance projects and full-time opportunities.
+                I'm currently available for full-time opportunities.
               </p>
             </motion.div>
           </motion.div>
@@ -312,8 +312,6 @@ const ContactSection = () => {
         </motion.div>
 
         */}
-
-
 
 
       </div>
