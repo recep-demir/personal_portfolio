@@ -9,7 +9,9 @@ import {
 import PROJECT_IMG_1 from "../assets/images/project-1.jpg"; 
 import PROJECT_IMG_2 from "../assets/images/project-interview.png";
 import PROJECT_IMG_3 from "../assets/images/project-stock.png";
-import PROJECT_IMG_4 from "../assets/images/project-todo.png"
+import PROJECT_IMG_4 from "../assets/images/project-blogapp.png";
+import PROJECT_IMG_5 from "../assets/images/project-todo.png"
+import PROJECT_IMG_6 from "../assets/images/project-expenses.png"
 
 export const SKILLS_CATEGORY = [
   {
@@ -86,7 +88,7 @@ export const PROJECTS = [
     title: "AI-Powered Self-Healing System",
     description: "A specialized system that monitors logs, analyzes errors using LLMs, and suggests automated fixes (In Progress).",
     image: PROJECT_IMG_1,
-    tags: ["Python", "LangChain", "Docker", "DevOps"], 
+    tags: ["Python", "LangChain","RAG", "Docker", "DevOps"], 
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
@@ -95,9 +97,9 @@ export const PROJECTS = [
   {
     id: 2,
     title: "AI-Powered Interview Prep",
-    description: "Smart interview preparation platform using Gemini AI to generate role-specific questions and detailed explanations.",
+    description: "Smart interview preparation platform using Gemini AI to generate role-specific questions and explanations.",
     image: PROJECT_IMG_2, 
-    tags: ["MERN Stack", "Gemini AI", "Tailwind CSS", "JWT" ],
+    tags: ["MERN Stack", "Gemini AI", "Tailwind CSS", "JWT", "Multer"],
     liveUrl: "https://interview-prep-app.netlify.app/",
     githubUrl: "https://github.com/recep-demir/interview-prep-ai.git",
     featured: true,
@@ -115,40 +117,40 @@ export const PROJECTS = [
     category: "Full Stack",
 },
     {
-    
-    id: 4,
-    title: "E-Commerce Management Suite",
-    description: "A full-featured dashboard for inventory and sales tracking, inspired by my e-commerce business experience.",
-    image: PROJECT_IMG_3,
-    tags: ["Node.js", "MongoDB", "React", "Express"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-    category: "Web App",
-  },
-    {
-    
-    id: 5,
-    title: "E-Commerce Management Suite",
-    description: "A full-featured dashboard for inventory and sales tracking, inspired by my e-commerce business experience.",
-    image: PROJECT_IMG_3,
-    tags: ["Node.js", "MongoDB", "React", "Express"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-    category: "Web App",
-  },
-  {
-  id: 6,
+  id: 4,
+  title: "PERN Stack Blog Platform",
+  description: "A professional blog system migrated from NoSQL to PostgreSQL, using Sequelize ORM and featuring a robust relational data structure.",
+  image: PROJECT_IMG_4, 
+  tags: ["PERN Stack", "PostgreSQL", "Sequelize",, "MUI", "Swagger"],
+  liveUrl: "https://milestone-blogapp-pern.netlify.app/",
+  githubUrl: "https://github.com/recep-demir/Milestone-BlogApp-PERN.git",
+  featured: false,
+  category: "Full Stack",
+},  
+{
+  id: 5,
   title: "TypeScript Full-Stack Task Manager",
   description: "Full-stack Task Manager built with React and PostgreSQL, featuring Docker support.",
-  image: PROJECT_IMG_4, 
+  image: PROJECT_IMG_5, 
   tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Docker"],
   liveUrl: "https://typescript-fs-todo-app.netlify.app/",
   githubUrl: "https://github.com/recep-demir/todo-app-ts.git",
   featured: false,
   category: "Full Stack",
 },
+    {
+    
+    id: 6,
+  title: "Cloud-Sync Financial Tracker",
+  description: "A modern financial tracking application featuring global state management and persistent data storage.",
+  image: PROJECT_IMG_6, 
+  tags: ["React 19", "Context API", "Firebase", "Toastify"],
+  liveUrl: "https://expenses-tracker11.netlify.app/",
+  githubUrl: "https://github.com/recep-demir/expenses-tracker-react-firebase.git",
+  featured: false,
+  category: "Financial Tech",
+  },
+
   
 ];
 
